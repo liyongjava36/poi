@@ -1,0 +1,18 @@
+
+server:
+    port: 8888
+servlet:
+    context-path:
+
+
+spring:
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/mybatis0717
+      username: root
+      password: root
+#spring集成Mybatis环境
+#pojo别名扫描包
+mybatis:
+    type-aliases-package: com.huawei.po
+    mapper-locations: classpath:*Mapper.xml
